@@ -159,7 +159,7 @@ function quizOver() {
 
     questionsDiv.appendChild(createSubmit);
 
-    // Event listener to capture initials and local storage for initials and score
+    // logs high score and and initials to local storage
     createSubmit.addEventListener("click", function () {
         var initials = createInput.value;
 
@@ -182,7 +182,7 @@ function quizOver() {
             Scores.push(finalScore);
             var newScore = JSON.stringify(Scores);
             localStorage.setItem("score", newScore);
-            // Travels to final page
+            // goes to highscore page
             window.location.replace("Highscore.html");
         }
     });
