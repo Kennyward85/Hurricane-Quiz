@@ -182,7 +182,7 @@ function quizOver() {
             Scores.push(finalScore);
             var newScore = JSON.stringify(Scores);
             localStorage.setItem("score", newScore);
-            // goes to highscore page
+            // goes to highscore page 
             window.location.replace("Highscore.html");
         }
     });
