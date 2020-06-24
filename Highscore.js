@@ -24,4 +24,4 @@ if (allScores !== null) {
 // Event listener to move to index page
 back.addEventListener("click", function () {
     window.location.replace("Index.html"); 
-});  
+}); 
